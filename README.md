@@ -12,9 +12,10 @@
 
 ## 使用
 
-- 安装 VSCode 插件：`Code Runner`
-- 打开`index.js`，右键运行
-- 修改 `main` 函数的入参，查看效果
+- 安装 VSCode 插件：`Code Runner` 以运行文件。
+- 安装 VSCode 插件：`Color Highlight` 以显示颜色。
+- 打开`/test/main.test.js`，右键运行
+- 修改测试数据，查看效果
 
 ## 效果
 
