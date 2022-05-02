@@ -1,4 +1,4 @@
-const { rgb2hsv, hsv2rgb } = require("../src//util/transfer");
+const { rgb2hsv, hsv2rgb } = require("../src/util/hsv");
 
 const testData = [
   [100, 10, 255],

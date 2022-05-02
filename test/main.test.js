@@ -12,7 +12,7 @@ const testData = [
 
 const test = () => {
     testData.forEach((c) => {
-        main(c,10);
+        main(c,10,'hsv');
     })
 }
 

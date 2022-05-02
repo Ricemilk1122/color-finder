@@ -1,17 +1,16 @@
 const getPallete = require("./src/pallete/get-pallete");
-const { rgb2hsv } = require("./src/util/transfer");
-const { finder } = require("./src/util/finder");
+const { hsvFinder } = require("./src/util/hsv-finder");
+const { labFinder } = require("./src/util/lab-finder");
 
-const main = async (color,n) => {
+const main = async (color, n, mode = 'lab') => {
   const { valueMap } = await getPallete();
 
   const rgbList = [...valueMap.keys()].map((s) => {
     const [r, g, b] = s.split(",");
     return [r, g, b];
   });
-  const hsvList = rgbList.map((rgb) => rgb2hsv(rgb));
 
-  const res = finder(color, hsvList, n);
+  const res = mode === 'lab' ? labFinder(color, rgbList, n) : hsvFinder(color, rgbList, n);
   console.table(res);
 };
 

@@ -1,5 +1,5 @@
-const { caculateDistance } = require("../src/util/caculate-distance");
-const { dArray2dString } = require("../src/util/rgb-base");
+const { caculateHSVDistance } = require("../src/util/hsv-distance");
+const { dArray2dString } = require("../src/util/rgb");
 
 const originColor = [78, 89, 104];
 
@@ -12,7 +12,7 @@ const testData = [
 const test = () => {
   const res = [];
   testData.forEach((compareColor) => {
-    const distance = caculateDistance(compareColor, originColor);
+    const distance = caculateHSVDistance(compareColor, originColor);
     res.push({
       originColor: dArray2dString(originColor),
       compareColor: dArray2dString(compareColor),

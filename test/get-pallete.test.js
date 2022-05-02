@@ -1,5 +1,5 @@
 const getPallete = require("../src/pallete/get-pallete");
-const { dArray2hString } = require('../src/util/rgb-base');
+const { dArray2hString } = require('../src/util/rgb');
 
 const test = async (type) => {
   let dString = '';

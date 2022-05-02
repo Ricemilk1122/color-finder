@@ -3,7 +3,7 @@ const {
   hString2dArray,
   dArray2dString,
   dArray2hString,
-} = require("../src/util/rgb-base");
+} = require("../src/util/rgb");
 
 const testData = [
   "rgb(10,35,255)",

@@ -1,4 +1,4 @@
-const caculateDistance = (hsvColor1, hsvColor2) => {
+const caculateHSVDistance = (hsvColor1, hsvColor2) => {
   const R = 100;
   const angle = 30;
   const h = R * Math.cos((angle / 180) * Math.PI);
@@ -18,4 +18,4 @@ const caculateDistance = (hsvColor1, hsvColor2) => {
   return distance;
 };
 
-module.exports = { caculateDistance };
+module.exports = { caculateHSVDistance };
