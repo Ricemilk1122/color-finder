@@ -18,7 +18,7 @@ const dString2dArray = (dString) => {
 };
 
 const hString2dArray = (hString) => {
-  const res = HEX_REGEX.exec(hStringd.replace(/\s+/g, ""));
+  const res = HEX_REGEX.exec(hString.replace(/\s+/g, ""));
   if (!res) {
     throw new Error(`${hString}匹配失败`);
   }
